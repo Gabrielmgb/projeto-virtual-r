@@ -16,7 +16,7 @@ const HeroSection = () => {
         intuitive development tools. Get started today and turn your imagination
         into immersive reality!
       </p>
-      <div className="flex justify-center my-10">
+      <div className="flex flex-col md:flex-row gap-4 justify-center my-10">
         <a
           href="#"
           className="bg-gradient-to-r from-lime-500 to-lime-800 hover:from-lime-400 hover:to-lime-600 duration-300 transition-all py-3 px-4 mx-3 rounded-md"
