@@ -16,17 +16,30 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
             <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight text-lime-100">VirtualR</span>
+            <span className="text-xl tracking-tight text-lime-100">
+              VirtualR
+            </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
-              <li key={index} className="hover:bg-zinc-900 rounded-lg py-2 px-3 duration-300 transition-all">
-                <a className=" hover:text-lime-300 duration-300 transition-all " href={item.href}>{item.label}</a>
+              <li
+                key={index}
+                className="hover:bg-zinc-900 rounded-lg py-2 px-3 duration-300 transition-all"
+              >
+                <a
+                  className=" hover:text-lime-300 duration-300 transition-all "
+                  href={item.href}
+                >
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md hover:bg-zinc-800 duration-300 transition-all">
+            <a
+              href="#"
+              className="py-2 px-3 border rounded-md hover:bg-zinc-800 duration-300 transition-all"
+            >
               Sign In
             </a>
             <a
@@ -37,22 +50,31 @@ const Navbar = () => {
             </a>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end ">
-            <button className="py-1 px-3 rounded-sm hover:bg-zinc-800 duration-300 transition-all cursor-pointer" onClick={toggleNavbar}>
+            <button
+              className="py-1 px-3 rounded-md hover:bg-zinc-800 duration-300 transition-all cursor-pointer"
+              onClick={toggleNavbar}
+            >
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col gap-4 justify-center items-center lg:hidden">
+          <div className=" h-[450px] fixed right-0 z-20 bg-neutral-950/90 w-full p-8 flex flex-col gap-4 justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4 hover:text-lime-300 transition-all duration-300">
+                <li
+                  key={index}
+                  className="py-4 hover:text-lime-300 transition-all duration-300"
+                >
                   <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col md:flex-row gap-4 space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md hover:bg-zinc-800 duration-300 transition-all">
+            <div className="flex flex-col items-center justify-center md:flex-row gap-4 space-x-6">
+              <a
+                href="#"
+                className="py-2 px-3 border rounded-md text-center bg-zinc-950 hover:bg-zinc-800 duration-300 transition-all"
+              >
                 Sign In
               </a>
               <a
