@@ -49,7 +49,7 @@ const Navbar = () => {
               Create an account
             </a>
           </div>
-          <div className="lg:hidden md:flex flex-col justify-end ">
+          <div className="lg:hidden md:flex flex-col justify-end pr-2">
             <button
               className="py-1 px-3 rounded-md hover:bg-zinc-800 duration-300 transition-all cursor-pointer"
               onClick={toggleNavbar}
