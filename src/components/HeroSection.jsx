@@ -33,7 +33,7 @@ const HeroSection = () => {
             autoPlay
             loop
             muted
-            className="rounded-lg w-full md:w-1/2 border border-lime-700 shadow-sm shadow-lime-400 mx-2 my-4"
+            className="rounded-lg w-full md:w-1/2 border border-lime-700 shadow-sm shadow-lime-400 mx-2 my-4 pointer-events-none"
           >
             <source src={video1} type="video/mp4" />
             Your browser does not support the video tag.
@@ -42,7 +42,7 @@ const HeroSection = () => {
             autoPlay
             loop
             muted
-            className="rounded-lg w-full md:w-1/2 border border-lime-700 shadow-sm shadow-lime-400  mx-2 my-4"
+            className="rounded-lg w-full md:w-1/2 border border-lime-700 shadow-sm shadow-lime-400  mx-2 my-4 pointer-events-none"
           >
             <source src={video2} type="video/mp4" />
             Your browser does not support the video tag.

@@ -64,7 +64,7 @@ const Navbar = () => {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="py-4 hover:text-lime-300 transition-all duration-300"
+                  className="py-4 hover:text-lime-300 transition-all duration-400"
                 >
                   <a href={item.href}>{item.label}</a>
                 </li>
